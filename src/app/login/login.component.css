@@ -51,9 +51,11 @@
     color: #fff;
     padding: 20px 45px 20px 20px;
 }
+
 .input-box input::placeholder{
     color: #fff;
 }
+
 .input-box i{
     position: absolute;
     right: 20px;
