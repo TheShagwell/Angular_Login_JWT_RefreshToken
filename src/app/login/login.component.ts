@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  // The payload from the API
+  loginObj: any = {
+    "EmailId": "",
+    "Password": "",
+  }
+
   constructor() { }
 
   ngOnInit() {
