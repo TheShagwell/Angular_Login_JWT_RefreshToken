@@ -24,7 +24,8 @@ export class LoginComponent implements OnInit {
   login(){
     debugger;
     this.userServiced.onLogin(this.loginObj).subscribe((res: any) => {
-      if (res.result){
+    debugger;
+      if(res.result){
         localStorage.setItem('userData', JSON.stringify(res.data));
         this.router.navigateByUrl('/dashboard');
       } else{
