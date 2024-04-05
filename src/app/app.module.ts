@@ -8,7 +8,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { LayoutComponent } from './layout/layout.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient, withInterceptors } from '@angular/common/http';
+import { customInterceptor } from '../services/custom.interceptor';
 
 @NgModule({
   declarations: [			
@@ -23,7 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
       HttpClientModule,
       FormsModule
   ],
-  providers: [],
+  providers: [
+    provideHttpClient(withInterceptors([customInterceptor]))
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
