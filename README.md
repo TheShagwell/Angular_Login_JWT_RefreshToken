@@ -6,3 +6,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - API `API Call from Swagger used will be available soon!`
 <!-- (https://freeapi.gerasim.in/index.html) -->
+<!-- user details is 'rahul@gmail.com' and password is '223344' -->
